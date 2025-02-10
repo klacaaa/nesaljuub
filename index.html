@@ -78,8 +78,9 @@
         .love-image {
             display: block;
             margin: 20px auto;
-            max-width: 90%; /* Podesio širinu da slika ne izlazi iz okvira */
-            height: auto; /* Održava proporcionalnost slike */
+            max-width: 100%; /* Obezbeđuje da slika ne izlazi iz okvira */
+            max-height: 80%; /* Ograničava visinu slike tako da ostane unutar pisma */
+            object-fit: contain; /* Održava proporcije slike i uklapa je unutar okvira */
             border-radius: 10px;
             box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
         }
